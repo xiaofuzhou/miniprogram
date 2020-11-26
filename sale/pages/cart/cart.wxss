@@ -1,0 +1,167 @@
+/* pages/cart/cart.wxss */
+
+/* 购物车没有商品样式  */
+
+.cart-no-data {
+  padding: 40rpx 0;
+  color: #999;
+  text-align: center;
+}
+
+/* 购物车有商品样式  */
+
+.cart-box {
+  padding-bottom: 100rpx;
+}
+
+/* 购物车中商品的样式  */
+
+.cart-list {
+  position: relative;
+  padding: 20rpx 20rpx 20rpx 285rpx;
+  height: 185rpx;
+  border-bottom: 1rpx solid #e9e9e9;
+}
+
+/* 购物车中商品前面单选按钮的样式  */
+
+.cart-list .cart-pro-select {
+  position: absolute;
+  left: 20rpx;
+  top: 90rpx;
+  width: 45rpx;
+  height: 45rpx;
+}
+
+/* 购物车中商品图片的样式  */
+
+.cart-list .cart-thumb {
+  position: absolute;
+  top: 20rpx;
+  left: 85rpx;
+  width: 185rpx;
+  height: 185rpx;
+}
+
+/* 购物车中商品名称的样式  */
+
+.cart-list .cart-pro-name {
+  display: inline-block;
+  width: 300rpx;
+  height: 105rpx;
+  line-height: 50rpx;
+  overflow: hidden;
+}
+
+/* 购物车中商品价格的样式  */
+
+.cart-list .cart-pro-price {
+  display: inline-block;
+  float: right;
+  height: 105rpx;
+  line-height: 50rpx;
+  color: red;
+}
+
+/* 购物车中控制商品数量、删除等功能的样式  */
+
+.cart-list .cart-count-box {
+  position: absolute;
+  left: 285;
+  bottom: 20rpx;
+  width: 250rpx;
+  height: 80rpx;
+}
+
+/* 购物车中text的样式  */
+
+.cart-list .cart-count-box text {
+  display: inline-block;
+  line-height: 80rpx;
+  text-align: center;
+}
+
+/* 购物车中增加商品+、减少商品-的样式  */
+
+.cart-count-down, .cart-count-add {
+  font-size: 35rpx;
+  width: 50rpx;
+  height: 100%;
+}
+
+/* 购物车所购商品数量的样式  */
+
+.cart-count-num {
+  width: 150rpx;
+}
+
+/* 购物车所购商品“删除”功能的样式  */
+
+.cart-del {
+  display: inline-block;
+  float: right;
+  height: 105rpx;
+  line-height: 50rpx;
+  color: red;
+}
+
+/* 底部操作栏样式*/
+
+.cart-footer {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  bottom: 0;
+  width: 100%;
+  height: 120rpx;
+  line-height: 120rpx;
+  background: #3e5f81;
+  color: #fff;
+}
+
+.cart-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* 底部操作栏“去结算”按钮的样式*/
+
+.button-red {
+  position: fixed;
+  right: 0;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 30rpx;
+  border-radius: 0rpx;
+  width: 30%;
+  height: 120rpx;
+  line-height: 120rpx;
+  background-color: #f44336; /* 红色 */
+}
+/* 底部操作栏“全选”按钮的样式*/
+.total-select {
+  position: absolute;
+  left: 20rpx;
+  top: 15rpx;
+  width: 30rpx;
+  height: 30rpx;
+  font-size: 30rpx;
+}
+/* 底部操作栏“全选”文字的样式*/
+.total-price-text {
+  position: absolute;
+  left: 85rpx;
+  top: 1rpx;
+  height: 30rpx;
+  font-size: 30rpx;
+}
+/* 底部操作栏“总价”及“总价值”文字的样式*/
+.total-price {
+  position: absolute;
+  left: 200rpx;
+  top: 1rpx;
+  height: 30rpx;
+  font-size: 30rpx;
+}

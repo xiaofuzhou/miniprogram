@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class=" ">
+  <!--左侧商品分类栏-->
+  <scroll-view class='left-navbar' scroll-y>
+    <view wx:for="{{navItems}}" class="{{curNav == index? 'active' : ''}}" wx:key="key" bindtap="leftClick" data-index="{{index}}">{{item.name}}
+    </view>
+  </scroll-view>
+  <scroll-view class="right" scroll-y scroll-top="{{scrollTop}}">
+    <!--右上侧商品推荐栏-->
+    <view>
+      <image class="img-banner" src="{{navItems[curNav].topicon}}" mode="scaleToFill"></image>
+    </view>
+    <!--右下侧商品列表栏-->
+    <view class="goods-list">
+      <view wx:for='{{navItems[curIndex].sub}}' class="goods" wx:key="key">
+        <navigator url="/pages/detail/detail?id={{item.id}}&icon={{item.icon}}&name={{item.name}}" hover-class="navigator-hover">
+          <image class="img"  src="{{item.icon}}"></image>
+          <text class='goods-title' >{{item.name}}</text>
+        </navigator>
+      </view>
+    </view>
+  </scroll-view>
+</view>

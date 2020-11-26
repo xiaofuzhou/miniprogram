@@ -1,0 +1,70 @@
+/**index.wxss**/
+
+.classify {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/*左侧导航条样式*/
+
+.left-navbar {
+  position: absolute;
+  left: 0px;
+  width: 25%;
+  height: 100%;
+  background-color: #eee;
+  font-size: 15px;
+}
+
+/*左侧导航条内每行的样式*/
+
+.left-navbar view {
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+
+.active {
+  background-color: #fff;
+  color: red;
+  font-size: 17px;
+}
+
+.right {
+  position: absolute;
+  right: 0px;
+  width: 75%;
+  height: 100%;
+}
+
+.img-banner {
+  height: 200rpx;
+  width: 100%;
+}
+
+.goods-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20rpx;
+}
+
+.goods-title {
+  /*给text设成块级元素*/
+  display: block;
+  /*设置文字溢出部分为...*/
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.goods {
+  width: 150rpx;
+  font-size: 14px;
+  margin: 15rpx;
+  text-align: center;
+}
+
+.img {
+  width: 150rpx;
+  height: 150rpx;
+}

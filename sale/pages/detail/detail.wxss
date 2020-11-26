@@ -1,0 +1,117 @@
+/* pages/detail/detail.wxss */
+page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+/*轮播图片样式 */
+swiper {
+  height: 450rpx;
+}
+swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+/*商品名和价格区样式*/
+.detail {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15rpx;
+  margin-bottom: 0rpx;
+}
+/*商品名样式*/
+.detail .title {
+  font-size: 40rpx;
+  margin: 10rpx;
+  color: black;
+  text-align: justify;
+}
+/*商品价格样式*/
+.detail .price {
+  color: red;
+  font-size: 40rpx;
+  margin: 10rpx;
+}
+/*商品评价区样式*/
+.coments {
+  border: 1px solid #cfcccc;
+}
+/*每条评价的样式*/
+.text-remark {
+  padding-bottom: 5px;
+  display: block;
+  font-size: 25rpx;
+  margin: 10rpx;
+  background: rgb(207, 204, 204);
+}
+/* 商品详情区图片样式 */
+.image_detail {
+  width: 100%;
+}
+/*底部悬浮条样式*/
+.detail-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  float: left;
+  background-color: #f6f6f9;  
+  bottom: 0;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  height: 120rpx;
+}
+/*底部悬浮条上图标加文字区样式*/
+.bottom-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*底部悬浮条上文字样式*/
+.bottom-banner view {
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 25rpx;
+  padding-bottom: 15rpx;
+}
+/*底部悬浮条上image组件的样式*/
+.detail-nav image {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 20rpx 30rpx;
+}
+/*底部悬浮条上列与列之间的竖线*/
+.line_nav {
+  width: 5rpx;
+  height: 100%;
+  background-color: gainsboro;
+}
+/*请选择购买数量、商品评价和商品详情的样式 */
+text {
+  display: block;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  margin: 10rpx;
+}
+/*底部悬浮条上按钮的样式*/
+button {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30rpx;
+  border-radius: 0rpx;
+  width: 50%;
+  height: 100%;
+  line-height: 120rpx;
+}
+/*底部悬浮条上“加入购物车”按钮的样式*/
+.button-cart {
+  background-color: #3e5f81;
+}
+/*底部悬浮条上“立即购买”按钮样式*/
+.button-buy {
+  background-color: rgb(138, 28, 28);
+}

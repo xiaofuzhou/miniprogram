@@ -1,0 +1,34 @@
+<!--pages/me/me.wxml-->
+<view>
+<!--页面头部区-->
+  <view class="header">
+    <image src="{{thumb}}" class="thumb"></image>
+    <text class="nickname">{{nickname}}</text>
+    <image class="code" src="../images/code.png"></image>
+  </view>
+  <!--个人信息管理行-->
+  <view class="info-box">
+    <view class="info-manage">
+      <navigator url="/pages/setup/setup">个人信息管理</navigator>
+    </view>
+  </view>
+  <!--我的订单详情区-->
+  <view class="orders-box">
+    <view class="orders">我的订单</view>
+    <!--列表渲染订单-->
+    <view class="orders-list" wx:for="{{orders}}" wx:key="index">
+      <view class="orders-number">订单编号：{{item.orderId}}</view>
+      <!--列表渲染订单中的商品-->
+      <view class="orders-detail" wx:for="{{item.yiGoods}}" wx:key="index">
+        <image src="{{item.yiIcon}}"></image>
+        <view>{{item.yiName}}</view>
+        <view style='color: #3e5f81'>单价：{{item.yiPrice}}，数量：{{item.yiBuy}}，小计：￥{{item.yiPrice*item.yiBuy}}</view>
+      </view>
+      <!--订单信息后付款行-->
+      <view class="orders-footer">
+        <text style='color:red'>实付：￥ {{item.yiSum}} </text>         
+        <button size="mini" class="orders-btn" bindtap="payOrders">付款</button>
+      </view>
+    </view>
+  </view>
+</view>
